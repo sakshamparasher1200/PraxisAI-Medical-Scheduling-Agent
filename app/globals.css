@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --dark-blue: #0a041c;
+  --purple: #8a2be2;
+  --cyan: #00f5ff;
+  --background: var(--dark-blue);
+  --foreground: #ffffff;
+  --accent: var(--cyan);
+  --secondary: var(--purple);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Glow effects */
+.glow {
+  box-shadow: 0 0 15px var(--cyan);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow:hover {
+  box-shadow: 0 0 25px var(--cyan);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+/* Custom scrollbar classes */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-track-\[\#8a2be2\]\/10::-webkit-scrollbar-track {
+  background: rgba(138, 43, 226, 0.1);
+}
+
+.scrollbar-thumb-gradient::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--purple), var(--cyan));
+  border-radius: 3px;
+}
+
+.scrollbar-thumb-gradient::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--cyan), var(--purple));
+}
