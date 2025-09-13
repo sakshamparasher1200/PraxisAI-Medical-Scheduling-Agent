@@ -70,7 +70,7 @@ Make sure you have Node.js (v18 or later) and npm installed on your machine.
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/your-username/praxis-ai.git](https://github.com/your-username/praxis-ai.git)
+    git clone https://github.com/sakshamparasher1200/PraxisAI-Medical-Scheduling-Agent.git
     ```
 2.  **Navigate to the project directory:**
     ```sh
